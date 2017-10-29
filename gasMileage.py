@@ -124,6 +124,8 @@ def readfile():
     # calls the final calculation module and prints the totalMileage.
     totalMileage = totalMpg(totalDist, gasUsed)
     print(totalMileage)
+    
+    legfile.close()
 
 def main():
 
