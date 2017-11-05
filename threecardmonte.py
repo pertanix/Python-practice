@@ -56,11 +56,13 @@ def main():
             if choice == correct:
                 winCount = winCount + 1
                 outcome1.setOutcome(1)
-                print("you win, keep going or quit")
+                Text(Point(350, 10), "you win, kep going or quit").draw(win)
+                #print("you win, keep going or quit")
             else:
                 loseCount = loseCount + 1
                 outcome1.setOutcome(2)
-                print("you lose, keep going or quit")
+                Text(Point(350, 10), "you lose, keep going or quit.").draw(win)
+                #print("you lose, keep going or quit")
         # Event for Button 2
         elif cb2.clicked(pt):
             choice = 2
@@ -68,11 +70,13 @@ def main():
             if choice == correct:
                 winCount = winCount + 1
                 outcome2.setOutcome(1)
-                print("you win, keep going or quit")
+                Text(Point(350, 10), "you win, kep going or quit").draw(win)
+                #print("you win, keep going or quit")
             else:
                 loseCount = loseCount + 1
                 outcome2.setOutcome(2)
-                print("you lose, keep going or quit")
+                Text(Point(350, 10), "you lose, keep going or quit.").draw(win)
+                #print("you lose, keep going or quit")
         # Event for Button 3
         elif cb3.clicked(pt):
             choice = 3
@@ -80,11 +84,13 @@ def main():
             if choice == correct:
                 winCount = winCount + 1
                 outcome3.setOutcome(1)
-                print("you win, keep going or quit")
+                Text(Point(350, 10), "you win, kep going or quit").draw(win)
+                #print("you win, keep going or quit")
             else:
                 loseCount = loseCount + 1
                 outcome3.setOutcome(2)
-                print("you lose, keep going or quit")
+                Text(Point(350, 10), "you lose, keep going or quit.").draw(win)
+                #print("you lose, keep going or quit")
                 
         # Resets loop
         qb.activate()
@@ -99,9 +105,11 @@ def main():
     wMessage = str(winCount)
     lMessage = str(loseCount)
 
-    # Prints a message displaying wins and loses. 
-    print("you won "+wMessage+" times.")
-    print("you lost "+lMessage+" times.")
+    # Prints a message displaying wins and loses.
+    Text(Point(345, 10), "you won" +wMessage+ "times.").draw(win)
+	Text(Point(355, 10), "you lost" +lMessage+ "times.").draw(win)
+    #print("you won "+wMessage+" times.")
+    #print("you lost "+lMessage+" times.")
     win.close()
 
 main()
